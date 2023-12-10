@@ -6,5 +6,5 @@ You can run source code using Intellij Idea
 
 # Prerequisite (Running Desktop App)
 - Windows - Install [dmg](https://github.com/develNerd/KiddieBlock/blob/main/examples/JiddieBlock-1.0.0.dmg) 
-- Mac - Install exe file
+- Mac - Execute [jar](https://github.com/develNerd/KiddieBlock/blob/main/examples/JiddieBlock-jvm-1.0-SNAPSHOT.jar) file
 - Linux 
