@@ -5,6 +5,6 @@ KiddieBlock is a desktop app that educates users on crypto and blockchain, as we
 You can run source code using Intellij Idea 
 
 # Prerequisite (Running Desktop App)
-Windows - Install dmg file
-Mac - Install exe file
-Linux - Not Supported
+- Windows - Install [dmg](https://github.com/develNerd/KiddieBlock/blob/main/examples/JiddieBlock-1.0.0.dmg) 
+- Mac - Install exe file
+- Linux 
