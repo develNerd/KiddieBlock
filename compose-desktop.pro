@@ -1,0 +1,6 @@
+-keep class *
+-keep class org.sqlite.** { *; }
+-keep class javax.** { *; }
+-keep class org.** { *; }
+-keep class io.** { *; }
+-keep class androidx.** { *; }

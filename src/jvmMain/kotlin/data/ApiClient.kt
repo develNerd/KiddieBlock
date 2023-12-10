@@ -25,7 +25,7 @@ class ApiClient {
             level = LogLevel.ALL
             logger = object: Logger {
                 override fun log(message: String) {
-                    println("HTTP Client $message")
+                    //println("HTTP Client $message")
                 }
             }
         }

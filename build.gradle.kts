@@ -25,6 +25,9 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                implementation(compose.desktop.windows_x64)
+                implementation(compose.desktop.common)
+                implementation(compose.desktop.linux_x64)
                 implementation("androidx.navigation:navigation-compose:2.5.3")
                 implementation("io.ktor:ktor-client-core:$ktor_version")
                 implementation("io.ktor:ktor-client-cio:$ktor_version")
@@ -42,9 +45,28 @@ compose.desktop {
     application {
         mainClass = "MainKt"
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "JiddieBlock"
+            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb,TargetFormat.Exe)
+            packageName = "KiddieBlock"
             packageVersion = "1.0.0"
+            modules("java.sql")
+            includeAllModules = true
+            macOS{
+                bundleID = "com.kiddie.block"
+
+            }
+            windows{
+                console = true
+            }
+            linux{
+
+            }
+        }
+        buildTypes.release {
+            proguard {
+                configurationFiles.from("compose-desktop.pro")
+                obfuscate.value(false)
+            }
+
         }
     }
 }

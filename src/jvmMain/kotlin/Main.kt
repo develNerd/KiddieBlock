@@ -301,7 +301,7 @@ fun HomePage() {
                                         ended = true
                                     }
                                 }
-                                println("$activeLessonImage" + "Total Size : ${currentLesson.images.size}")
+                                //println("$activeLessonImage" + "Total Size : ${currentLesson.images.size}")
                             }){
                                 Image(painter = painterResource("local_assets/Btn-right.svg"),"")
                             }
